@@ -1,0 +1,231 @@
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  width: var(--main-width);
+  height: var(--main-height);
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-secondary-color);
+  font-family: roboto, sans-serif;
+}
+
+nav {
+  position: sticky;
+  width: var(--main-width);
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #f1f1f1;
+}
+
+.navmenu {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border: solid 2px #000;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #000;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.video__container {
+  width: var(--main-width);
+  height: var(--main-height);
+}
+
+.header__video {
+  width: var(--main-width);
+  height: var(--main-height);
+  object-fit: cover;
+}
+
+.apple-products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-intro_container {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.product-intro_container img {
+  max-width: var(--main-width);
+  padding: var(--small-padding);
+  border: solid 2px lightgray;
+  border-radius: var(--border-radius);
+  transition: transform 0.5s;
+  cursor: pointer;
+  box-shadow: 8px 8px 10px rgb(253, 252, 252);
+}
+
+.product-intro_container img:hover {
+  transform: scale(0.8);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.product-intro h1 {
+  margin: var(--margin-small);
+  font-size: var(--big-font-size);
+  text-align: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.product-intro h1:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.product-intro p {
+  margin: var(--margin-small);
+  font-size: var(--normal-font-size);
+  text-align: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.by-now {
+  display: inline-block;
+  background: var(--background-fourth-color);
+  color: var(--secondary-color);
+  padding: var(--medium-padding);
+  margin: var(--margin-medium);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.by-now:hover {
+  background: var(--background-thired-color);
+  color: var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.about__us {
+  margin-top: var(--margin-large);
+  text-align: center;
+  font-size: var(--normal-font-size);
+}
+.about__us p {
+  text-align: center;
+  margin: var(--margin-small);
+  line-height: 1.7;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--background-thired-color);
+  color: var(--main-color);
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand {
+  font-size: var(--medium-font-size);
+  margin-bottom: var(--margin-small);
+  cursor: pointer;
+}
+
+.footer-nav-1 {
+  margin: 20px 0;
+}
+
+.follow {
+  font-size: var(--medium-font-size);
+  margin-bottom: var(--margin-small);
+  cursor: pointer;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: color 0.3s;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: var(--normal-font-size);
+}
+
+.footer-links a:hover {
+  color: var(--background-secondary-color);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-social a:hover {
+  color: var(--background-secondary-color);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navmenu {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .col-2 img {
+    margin-bottom: var(--margin-small);
+  }
+}

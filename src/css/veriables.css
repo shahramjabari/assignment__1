@@ -1,0 +1,36 @@
+:root {
+  /* background-Color */
+  --background-color: lightgrey;
+  --background-secondary-color: lightgrey;
+  --background-thired-color: #000;
+  --background-fourth-color: #fff;
+
+  /*text color */
+  --main-color: white;
+  --secondary-color: #000000;
+
+  /* spacing */
+  --small-padding: 1rem;
+  --medium-padding: 2rem;
+  --large-padding: 3rem;
+
+  /* border */
+  --border-radius: 2.5rem;
+  --small-border-radius: 1rem;
+
+  /* font size */
+  --big-font-size: 2.5rem;
+  --medium-font-size: 1.5rem;
+  --normal-font-size: 1rem;
+
+  --list-style: none;
+
+  /* Margins */
+  --margin-small: 1rem;
+  --margin-medium: 2rem;
+  --margin-large: 5rem;
+
+  /* width and height */
+  --main-width: 100%;
+  --main-height: 100vh;
+}

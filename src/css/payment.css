@@ -1,0 +1,117 @@
+@font-face {
+  font-family: roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  padding: 1rem;
+  font-family: roboto, sans-serif;
+}
+header {
+  color: var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container form {
+  padding: 50px;
+  width: 700px;
+  background-color: lightgreen;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.container form .navbar {
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.container form .navbar .nav-link {
+  flex: 1 1 300px;
+}
+
+img {
+  width: 12%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.Title {
+  font-size: 30px;
+  color: black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .navbar .nav-link .inputbox {
+  margin: 15px 0px;
+}
+
+input {
+  width: var(--main-width);
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+label {
+  font-size: var(--normal-font-size);
+  margin-top: 5px;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.sumbit {
+  background-color: lightgray;
+  padding: 10px 20px;
+  border-radius: var(--small-border-radius);
+  color: #000;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sumbit:hover {
+  background-color: gray;
+}
